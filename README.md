@@ -43,7 +43,7 @@ const Counter = new Store.Module('Counter', {
       commit('increase');
     },
     down({ commit }) {
-      commit('increase');
+      commit('decrease');
     },
 });
 
