@@ -61,6 +61,8 @@ Counter.up()       // Promise<void>
 Counter.formated   // 'Counter: 1'
 Counter.decrease() // undefined
 Counter.counter    // 0
+
+Counter.$unregisterModule();
 ```
 
 ## In components
