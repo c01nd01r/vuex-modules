@@ -67,6 +67,7 @@ const unwatchFn = Counter.$watch(
   (newVal, oldVal) => console.log(newVal), // callback
   { deep: false, immediate: false }, // options like Vue.$watch() https://vuejs.org/v2/api/#vm-watch
 );
+
 Counter.$unregisterModule();
 ```
 
