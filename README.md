@@ -62,6 +62,11 @@ Counter.formated   // 'Counter: 1'
 Counter.decrease() // undefined
 Counter.counter    // 0
 
+const unwatchFn = Counter.$watch(
+  (state, getters) => state.counter, // return state and/or getters for watching
+  (newVal, oldVal) => console.log(newVal), // callback
+  { deep: false, immediate: false }, // options like Vue.$watch() https://vuejs.org/v2/api/#vm-watch
+);
 Counter.$unregisterModule();
 ```
 
